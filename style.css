@@ -1,0 +1,281 @@
+
+
+
+
+
+
+
+
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* Navigation bar styling */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+nav .left {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Hero section */
+.firstsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-align: center;
+}
+
+.firstsec .name {
+    font-size: 48px;
+    font-weight: 600;
+    color: #ffcf6b;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcf6b;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: #ffa731;
+}
+
+#show {
+    display: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    transition: opacity 1s;
+}
+
+/* Section headers */
+h2 {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Education and skills */
+.secondsection, .skills, .projects {
+    padding: 40px 10%;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.vertical {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.vertical:hover {
+    transform: translateY(-5px);
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    height: 8px;
+    background: #e0e0e0;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: #3498db;
+    transition: width 0.6s;
+}
+
+/* Project cards */
+.projects .website {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.projects .website:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #fff; /* White background */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #4b12e9; 
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center;
+}
+
+.contact-item {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Make sure it adapts to the available space */
+    text-align: left;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    color: #333; /* Dark grey for headings */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #666; /* Lighter grey for text */
+    margin-bottom: 0;
+}
+
+.contact-item a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #333; /* Darker color on hover for links */
+}
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.achievements h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #6A0DAD; /* Purple color for consistency */
+}
+
+.achievement {
+    background-color: #fff; /* White background for individual achievements */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.achievement h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333; /* Dark grey for titles */
+    margin-bottom: 10px;
+}
+
+.achievement p {
+    font-size: 1rem;
+    color: #666; /* Slightly lighter grey for text */
+    margin-bottom: 0;
+}

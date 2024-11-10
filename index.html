@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Priya Rathore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Full-screen overlay style */
+        #resume-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #resume-overlay img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        /* Updated section styling for dynamic and professional colors */
+        .secondsection, .skills, .projects {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        h2, h3 {
+            color: #0066cc; /* professional blue */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="left">Priya Rathore</div>
+        <div class="right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="firstsec">
+        
+        <h1>Hello! I’m <span class="name">Priya Rathore</span></h1>
+        <p> "Enthusiastic Software Engineer with a solid foundation in core subjects like DBMS, SEPM, and OS. Eager to 
+            contribute to SoftWare Industry's innovative projects, leveraging my technical skills to deliver effective solutions in a collaborative 
+            environment."  <span id="element"></span></p>
+        <div class="buttons">
+            <button type="button" onclick="showResume()" id="btn">Download Resume</button>
+        </div>
+    </section>
+
+    <section id="about" class="secondsection">
+        <h2>My Education</h2>
+        <div class="box">
+            <div class="vertical">
+                <h3>Class 10th</h3>
+                <p>GOVT. GIRLS HIGH SECONDARY SCHOOL SANWER</p>
+                <p>Result: 82.2%</p>
+            </div>
+            <div class="vertical">
+                <h3>Class 12th</h3>
+                <p>GOVT. GIRLS HIGH SECONDARY SCHOOL SANWER</p>
+                <p>Result: 79.4%</p>
+            </div>
+            <div class="vertical">
+                <h3>B.Tech - Computer Science</h3>
+                <p>SHRI VAISHNAV VIDHYAPEETH VISHWAVIDYALAYA</p>
+                <p>CGPA: 7.36</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <h3>Technical Skills</h3>
+        <div class="skill">
+            <span>JAVA</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 95%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 98%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JAVASCRIPT</span>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+       <h3>Soft Skills</h3> 
+       <div class="skill">
+        <span>Adaptability</span>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 95%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span>Team Work</span>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <span>Communication</span>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 95%;"></div>
+        </div>
+    </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="website">
+            <h3>Portfolio Website</h3>
+            <p>A personal website showcasing my skills in web Technologies and Designing of Dynamic UI.</p>
+        </div>
+        <div class="website">
+            <h3>Web Calculator</h3>
+            <p>A Web Calculator is a online Calculator built using html css and javascript capable of doing arithemetic tasks of a Calculator.</p>
+        </div>
+        <div class="website">
+            <h3>Digital Teller Machine</h3>
+            <p>A DTM is a java based application built using java concept Swing and Awt which is a simulation of ATM.</p>
+        </div>
+      
+    </section>
+    <section id="achievements" class="achievements">
+        <h2>Certifications & Achievements</h2>
+        <div class="achievement">
+            <h3>NPTEL Certification: Programming in Java</h3>
+            <p>Issued by IIT Kharagpur</p>
+        </div>
+        <div class="achievement">
+            <h3>Core JAVA, C/C++ Certification</h3>
+            <p>Issued by Jobsense Institute, Ujjain</p>
+        </div>
+        <div class="achievement">
+            <h3>Web Development Online Internship</h3>
+            <p>Certification by CODSOFT</p>
+        </div>
+        <div class="achievement">
+            <h3>Industrial Internship: Cyber Security & Ethical Hacking</h3>
+            <p>Certified Internship</p>
+        </div>
+        <div class="achievement">
+            <h3>SMART INDIA HACKATHON</h3>
+            <p>Participated in the prestigious Smart India Hackathon</p>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+91 8827302334</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:2334priya.rathore@gmail.com">2334priya.rathore@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/priya--rathore/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>12, Gawali Mohalla, Sanwer</p>
+            </div>
+        </div>
+    </section>
+    
+</main>
+
+<!-- Full-Screen Resume Overlay -->
+<div id="resume-overlay">
+    <img src="Resume.jpg" alt="Resume" />
+</div>
+
+<script>
+    function showResume() {
+        const overlay = document.getElementById("resume-overlay");
+        overlay.style.display = "flex";  // Show resume in full screen
+        setTimeout(() => {
+            overlay.style.display = "none";  // Hide it after 10 seconds
+        }, 10000); // 10 seconds
+    }
+</script>
+
+</body>
+</html>
